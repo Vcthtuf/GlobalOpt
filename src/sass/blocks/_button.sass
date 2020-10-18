@@ -1,0 +1,52 @@
+.button 
+    background-color: $main-color 
+    width: 160px
+    height: 45px
+    border-radius: 22px
+    font-size: 13px
+    border: none
+    outline: none
+    color: rgb(255, 255, 255)
+    text-transform: uppercase
+    text-align: center
+    -moz-transform: matrix( 0.92021276595745,0,0,0.91836734693878,0,0)
+    -webkit-transform: matrix( 0.92021276595745,0,0,0.91836734693878,0,0)
+    -ms-transform: matrix( 0.92021276595745,0,0,0.91836734693878,0,0)
+    &_main 
+        @media screen and ( max-width: 992px ) 
+            width: 140px
+            font-size: 12px
+
+        @media screen and ( max-width: 576px )
+            height: 37px
+            
+
+    &_large 
+        width: 230px
+        height: 57px   
+        font-size: 15px
+        color: rgb(255, 255, 255)
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+        border-radius: 28px 
+        
+        @media screen and ( max-width: 576px )
+            width: 200px
+            height: 40px
+
+    &_mini 
+        width: 160px
+        height: 45px 
+        &:hover
+            background-color: $main-color-active
+        
+
+  
+        
+    
+  
+        
+
+
+

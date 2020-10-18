@@ -1,0 +1,51 @@
+.features 
+    padding: 57px 0 50px
+    background-color: #f3f3f3
+    .subtitle 
+        margin-bottom: 25px
+
+    &__wrapper 
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        margin: 0 6px
+    &__item 
+        flex-basis: 48%
+        display: flex
+        justify-content: flex-start
+        margin-bottom: 20px
+        img 
+            display: block
+            align-self: flex-start
+            margin-right: 13px 
+    &__subtitle 
+        font-size: 16px
+        font-weight: 700
+        color: rgb(236, 100, 75)
+        text-align: left
+        margin-bottom: 5px
+    &__descr 
+        font-size: 16px
+        font-weight: 300
+        color: #3a3a3a
+        text-align: left
+
+    @media screen and ( max-width: 768px )
+        &__subtitle 
+            font-size: 14px
+        &__descr 
+            font-size: 12px
+
+    @media screen and ( max-width: 480px )
+        &__wrapper 
+            justify-content: center
+        &__item 
+            flex-basis: 90%
+            align-items: center
+        
+        
+
+  
+
+

@@ -14,7 +14,9 @@ html(lang="ru")
             .container
                 .header
                     .logo
-                    nav
+                        a(href="#") 
+                            img(src="icon/logo.png", alt="logo")
+                    nav#menu
                         ul.promo__menu
                             li.promo__item
                                 a.promo_link(href="#") Преимущества
@@ -29,14 +31,21 @@ html(lang="ru")
                             li.promo__item
                                 a.promo_link(href="#") Контакты
                     .promo__questions
-                        .promo__text Есть вопросы?
+                        .promo__question Есть вопросы?
                         a.promo__phone(href="tel:+79264230100") +7 (926) 423 01 00
-                    button.button Перезвоните мне
+                    button.button.button_main Перезвоните мне
+                    .hamburger#hamburger
+                        span
+                        span
+                        span
                 .promo__wrapper 
                     h2.promo__subtitle Global Opt - логистика полного цикла из Китая в Россию
                     h1.promo__title ДОСТАВКА ГРУЗОВ ИЗ КИТАЯ
                     .promo__text В РОССИЮ И СНГ ВСЕМИ ВИДАМИ ТРАНСПОРТА
-                    .line
+                    .promo__line
+                        .promo__line_left
+                        .promo__line_center
+                        .promo__line_right
                     .promo__icons 
                         .promo__icon
                             img(src="icon/promo/icon_1.png", alt="")
@@ -50,6 +59,115 @@ html(lang="ru")
                         .promo__icon
                             img(src="icon/promo/icon_4.png", alt="")
                             .promo__descr Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг  
-                    button.button Получить расчет
-                
+                    button.button.button_large Получить расчет
+        section.features
+            .container 
+                h2.subtitle Преимущества работы с GlobalOpt
+                .features__wrapper 
+                    .features__item 
+                        img.features__icon(src="icon/features/icon_1.png", alt="icon")
+                        .features__text 
+                            .features__subtitle Офисы в Китае и России
+                            .features__descr Офисы расположены в Москве, столице России.  И в Гуанчжоу, мировом торговом мегаполисе Китая
+                    .features__item 
+                        img.features__icon(src="icon/features/icon_2.png", alt="icon")
+                        .features__text 
+                            .features__subtitle Декларируем груз с оптимизацией
+                            .features__descr Идем на встречу своим клиентам и помогаем растаможить груз с оптимизацией кодов и ставок.
+                    .features__item 
+                        img.features__icon(src="icon/features/icon_3.png", alt="icon")
+                        .features__text 
+                            .features__subtitle Квалифицированные кадры
+                            .features__descr Наши сотрудники имеют большой опыт в логистике с Китаем и в совершенстве владеют китайским и английским языками.
+                    .features__item 
+                        img.features__icon(src="icon/features/icon_4.png", alt="icon")
+                        .features__text 
+                            .features__subtitle Осуществляем поиск производителей
+                            .features__descr Помогаем нашим клиентам найти интересующий вас товар или производителя в Китае.
+                    .features__item 
+                        img.features__icon(src="icon/features/icon_5.png", alt="icon")
+                        .features__text 
+                            .features__subtitle Собственный склад в Китае
+                            .features__descr Свой склад в Китае, позволяет собирать и проверять и упаковывать  ваши товары, перед отправкой.
+                    .features__item 
+                        img.features__icon(src="icon/features/icon_6.png", alt="icon")
+                        .features__text 
+                            .features__subtitle Перевод денег в Китай
+                            .features__descr Помогаем переводить и оплачивать товар в Китае на льготных условиях
+                    .features__item 
+                        img.features__icon(src="icon/features/icon_7.png", alt="icon")
+                        .features__text 
+                            .features__subtitle Делаем оптовые поставки под ключ
+                            .features__descr Берём на себя все заботы связанные с  закупкой, проверкой на качество, логистикой и растаможкой. От вас требуется лишь заполнить техническое задание, одобрить  образцы товаров и после принять товар на своём складе!
+                    .features__item 
+                        img.features__icon(src="icon/features/icon_8.png", alt="icon")
+                        .features__text 
+                            .features__subtitle Поездка на производство в Китай
+                            .features__descr У нас большой опыт в бизнес поездках по Китаю. Мы с большой радостью и желанием организуем вам такую поездку в Китай под ключ. Сделаем визу, трансфер из аэропорта, забронируем отель, предоставим переводчика. Организуем поездку на производство. Шоп тур. Мебельный тур. 
+        section.work 
+            .container
+                h2.subtitle Наша работа - больше чем просто доставка
+                hr.line 
+                .work__descr Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза и ваших требований по срокам и бюджету.
+                .work__wrapper 
+                    .work__item 
+                        .work__img 
+                            img(src="img/jpg/our_work/img_1.jpg", alt="")
+                        .work__subtitle Страховка груза
+                        .work__text Все грузы, логистику которых осуществляет Global Opt, застрахованы. Мы гарантируем полное возмещение стоимости груза в случаях, предусмотренных страхо- вым соглашением. Все ваши тревоги наша компания берет на себя.
+                    .work__item 
+                        .work__img 
+                            img(src="img/jpg/our_work/img_2.jpg", alt="")
+                        .work__subtitle Логистика последней мили
+                        .work__text Мы осуществляем доставку вашего груза до конкретного адреса. Привоз согласовывается менед- жерами по телефону, предварительно за сутки и за час до доставки. Также мы предоставляем услуги грузчи- ков по месту доставки груза.
+                    .work__item 
+                        .work__img 
+                            img(src="img/jpg/our_work/img_1.jpg", alt="")
+                        .work__subtitle Мы всегда смотрим вперед
+                        .work__text Философия нашей компании, делать себя и своих партнеров по всему миру, успешными и богатыми. Поэтому мы всегда открыты к диалогу о партнерстве и инвестициях.
+        section.agent 
+            .container 
+                .agent__icon 
+                    img(src="icon/agent-icon.png", alt="agent icon")
+                .agent__subtitle Агент в Китае
+                .agent__text Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.
+        section.prices 
+            .container 
+                .subtitle Цены на любой вариант доставки
+                .line 
+                .prices__descr Перевозки грузов на дальние расстояния без каких-либо ограничений.<br> Любой груз доставим вовремя. 
+                .prices__wrapper 
+                    .card 
+                        .card__title Доставка морем
+                        .card__icon 
+                            img(src="icon/prices/icon_1.png", alt="price")
+                        .card__delivery Доставка 35-50 дней
+                        .card__price от 0,3$ за 1 кг
+                        .card__descr Морские перевозки грузов из Китая в Россию за 35 дней с прохождением таможни 
+                        button.button.button_mini Подробнее
+                    .card 
+                        .card__title Ж/Д доставка
+                        .card__icon 
+                            img(src="icon/prices/icon_2.png", alt="price")
+                        .card__delivery Доставка 15-28 дней
+                        .card__price от 1$ за 1 кг
+                        .card__descr ЖД перевозки грузов из Китая в Россию от 2 недель с прохождением таможни
+                        button.button.button_mini Подробнее
+                    .card 
+                        .card__title Автодоставка
+                        .card__icon 
+                            img(src="icon/prices/icon_3.png", alt="price")
+                        .card__delivery Доставка 12-20 дня
+                        .card__price от 1$ за 1 кг
+                        .card__descr Автоперевозки грузов из Китая в Россию от 2 недель с прохождением таможни
+                        button.button.button_mini Подробнее
+                    .card 
+                        .card__title Авиа доставка
+                        .card__icon 
+                            img(src="icon/prices/icon_4.png", alt="price")
+                        .card__delivery Доставка 1-12 дней
+                        .card__price от 6$ за 1 кг
+                        .card__descr Авиаперевозки грузов из Китая в Россию до 2 недель с прохождением таможни
+                        button.button.button_mini Подробнее
+
         script(src='js/script.js')

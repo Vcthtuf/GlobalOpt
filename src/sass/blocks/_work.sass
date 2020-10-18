@@ -1,0 +1,70 @@
+.work 
+    padding: 50px 0 
+    .subtitle 
+        margin-bottom: 15px 
+    
+    &__descr 
+        width: 900/1140*100%
+        margin: 0 auto 35px auto
+        font-size: 21px
+        font-weight: 300
+        color: rgb(46, 46, 46)
+        line-height: 1.143
+        text-align: center
+    &__wrapper 
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &__item 
+        width: 360/1140*100%
+    &__img 
+        margin-bottom: 27px 
+        img 
+            width: 100% 
+            height: auto
+    &__subtitle 
+        font-size: 18px 
+        font-weight: 700 
+        color: #ec644b 
+        text-align: center
+        margin-bottom: 12px 
+    &__text 
+        font-size: 14px
+        color: #3a3a3a
+        font-weight: 300
+        line-height: 1.5
+        text-align: justify
+
+    @media screen and ( max-width: 768px )
+        &__descr 
+            font-size: 15px
+            margin-bottom: 20px
+        &__subtitle 
+            font-size: 15px
+        &__text
+            font-size: 12px
+
+    @media screen and ( max-width: 576px )
+        padding: 30px 0
+        &__subtitle 
+            font-size: 13px 
+        &__text 
+            font-size: 10px
+
+    @media screen and ( max-width: 480px ) 
+        &__descr 
+            font-size: 12px 
+        &__wrapper 
+            flex-direction: column
+            align-items: center
+        &__item 
+            width: 90%
+            margin-bottom: 20px
+        &__img 
+            margin-bottom: 15px 
+
+        
+        
+        
+  
+
