@@ -1,3 +1,7 @@
+=button_hover
+    &:hover
+        background-color: $main-color-active
+
 .button 
     background-color: $main-color 
     width: 160px
@@ -12,6 +16,8 @@
     -moz-transform: matrix( 0.92021276595745,0,0,0.91836734693878,0,0)
     -webkit-transform: matrix( 0.92021276595745,0,0,0.91836734693878,0,0)
     -ms-transform: matrix( 0.92021276595745,0,0,0.91836734693878,0,0)
+    +button_hover
+
     &_main 
         @media screen and ( max-width: 992px ) 
             width: 140px
@@ -30,6 +36,7 @@
         text-transform: uppercase
         text-align: center
         border-radius: 28px 
+        +button_hover
         
         @media screen and ( max-width: 576px )
             width: 200px
