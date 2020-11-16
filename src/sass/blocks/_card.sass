@@ -1,12 +1,19 @@
 .card 
+    //flex-wrap: wrap
+    //flex-direction: column
     width: 260/1140*100%
     text-align: center
     &__wrapper
+        display: flex
+        flex-direction: column
+        justify-content: start
+        align-item: center
         padding: 2px 2px 25px 2px
         border: 1px solid #eaeaea
+        height: 100%
 
     &__title 
-        margin: 0 auto 14px auto
+        margin: 0 0 14px 0
         padding: 20px 0
         font-size: 16px
         font-weight: 700
@@ -28,6 +35,7 @@
         line-height: 1.429
         text-align: center
         margin-bottom: 24px
+        flex-grow: 1
 
 
 
