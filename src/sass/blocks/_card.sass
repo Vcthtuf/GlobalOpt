@@ -1,6 +1,4 @@
 .card 
-    //flex-wrap: wrap
-    //flex-direction: column
     width: 260/1140*100%
     text-align: center
     &__wrapper
@@ -36,7 +34,30 @@
         text-align: center
         margin-bottom: 24px
         flex-grow: 1
-
+    @media screen and ( max-width: 768px )
+        width: 520/1140*100%
+        margin-bottom: 10px
+        &__title 
+            font-size: 13px
+        &__price 
+            font-size: 22px
+        &__descr 
+            font-size: 13px
+        &__delivery 
+            font-size: 13px
+    @media screen and ( max-width: 480px )
+        width: 840/1140*100%
+        &__wrapper
+            padding-bottom: 15px
+        &__title 
+            padding: 10px 0
+            margin-bottom: 10px
+        &__price 
+            font-size: 18px
+            margin-bottom: 10px
+        &__descr
+            font-size: 12px
+            margin-bottom: 15px
 
 
     
