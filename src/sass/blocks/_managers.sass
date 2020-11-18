@@ -1,6 +1,13 @@
 .managers 
     background: url(../img/bg/managers.jpg) center center/cover no-repeat
     padding: 58px 0 73px
+    margin-bottom: 50px
+
+    @media screen and (max-width: 768px)
+        padding: 35px 0 45px
+
+    @media screen and ( max-width: 480px )
+        padding: 25px 0
 
     &__icon 
         margin: 0 auto 19px auto
@@ -11,9 +18,31 @@
         border-style: solid
         border-radius: 50%
 
+        @media screen and (max-width: 980px)
+            padding: 15px
+            width: 90px
+
+        @media screen and (max-width: 768px)
+            padding: 13px
+            width: 87px
+
+        @media screen and (max-width: 576px)
+            padding: 6px
+            width: 74px
+
+        @media screen and (max-width: 480px) 
+            padding: 0
+            width: 58px
+
         img 
             display: block
             margin: 0 auto
+
+            @media screen and (max-width: 980px) 
+                transform: scale(0.8)
+
+            @media screen and (max-width: 480px) 
+                transform: scale(0.5)
 
     &__title
         margin: 0 auto 
@@ -24,8 +53,15 @@
         font-weight: bold
         line-height: 0.885
         letter-spacing: 0.1em
-  
 
+        @media screen and (max-width: 980px)
+            font-size: 22px
+
+        @media screen and (max-width: 768px)
+            font-size: 20px
+
+        @media screen and ( max-width: 480px )
+            font-size: 16px
 
     &__descr 
         margin: 0 auto  
@@ -35,4 +71,12 @@
         line-height: 1.421
         text-align: center
         width: 1000/1140*100%
-  
+
+        @media screen and (max-width: 980px)
+            font-size: 15px
+
+        @media screen and (max-width: 768px)
+            font-size: 12px
+
+        @media screen and ( max-width: 480px )
+            font-size: 10px
