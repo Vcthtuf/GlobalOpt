@@ -244,6 +244,18 @@ html(lang="ru")
                             .slider__arrow_right
                         .slider__name Анисимова Ольга
                         .slider__text Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
-                       
+        section.questions
+            .container
+                .title
+                    h3.questions__title Остались вопросы?
+                    .questions__descr Напишите нам!
+                form.questions__form 
+                    .questions__wrapper
+                        input(type="text" placeholder="Ваше имя...")
+                        input(type="text" placeholder="Ваш номер телефона...") 
+                        input(type="text" placeholder="Ваш e-mail...")
+                    textarea(name="massage", cols="30", rows="3" placeholder="Сообщение...")
+                    button.button.questions__button отправить заявку
+                    
 
         script(src='js/script.js')
