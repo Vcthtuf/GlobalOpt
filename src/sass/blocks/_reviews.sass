@@ -24,15 +24,14 @@
             position: relative                    
 
         &__avatar 
-            text-align: center
+            display: flex
+            justify-content: center
             margin-bottom: 15px
 
             .slider__arrow_left
-                position: absolute
-                top: 25%
-                transform: translateY(-50%)
-                left: 32%
                 padding: 0 20px
+                align-self: center
+
                 &:hover 
                     cursor: pointer
                 
@@ -51,12 +50,14 @@
                     background-color: #ed6e56 
                     transform: rotate(330deg) translateY(-10%) 
 
+            img 
+                display: block
+                margin: 0 20px
+
             .slider__arrow_right
-                position: absolute
-                top: 25%
-                transform: translateY(-50%)
-                left: 61%
                 padding: 0 20px
+                align-self: center
+                
                 &:hover 
                     cursor: pointer
                 
@@ -89,9 +90,31 @@
             line-height: 1.223
             text-align: center
 
-         
+    @media screen and ( max-width: 980px )
 
-        
+        &__descr 
+            font-size: 14px
+
+        .slider__text 
+            font-size: 12px
+         
+    @media screen and ( max-width: 576px )
+
+        padding: 30px 0
+
+        .slider__item 
+            width: 85%
+
+    @media screen and ( max-width: 480px )
+
+        &__descr 
+            font-size: 12px
+
+        .slider__name 
+            font-size: 15px
+
+        .slider__text 
+            font-size: 10px
   
 
   
