@@ -34,6 +34,7 @@
 
                 &:hover 
                     cursor: pointer
+                    background-color: #eee
                 
                 &::before 
                     content: ''
@@ -41,14 +42,17 @@
                     width: 2px
                     height: 25px
                     background-color: #ed6e56
-                    transform: rotate(30deg) translateY(10%)
+                    transform-origin: 50% 100%
+                    transform: rotate(30deg)
+                    
                 &::after
                     content: ''
                     display: block
                     width: 2px
                     height: 25px
                     background-color: #ed6e56 
-                    transform: rotate(330deg) translateY(-10%) 
+                    transform-origin: 50% 0%
+                    transform: rotate(-30deg)
 
             img 
                 display: block
@@ -60,6 +64,7 @@
                 
                 &:hover 
                     cursor: pointer
+                    background-color: #eee
                 
                 &::before 
                     content: ''
@@ -67,14 +72,16 @@
                     width: 2px
                     height: 25px
                     background-color: #ed6e56
-                    transform: rotate(-30deg) translateY(10%)
+                    transform-origin: 50% 100%
+                    transform: rotate(-30deg)
                 &::after
                     content: ''
                     display: block
                     width: 2px
                     height: 25px
                     background-color: #ed6e56 
-                    transform: rotate(30deg) translateY(-10%) 
+                    transform-origin: 50% 0%
+                    transform: rotate(30deg) 
 
         &__name 
             text-align: center
