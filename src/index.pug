@@ -237,13 +237,25 @@ html(lang="ru")
                 .line
                 .reviews__descr Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова
                 .slider 
-                    .slider__item 
-                        .slider__avatar
-                            .slider__arrow_left
-                            img(src="img/jpg/reviews/img_1.jpg", alt="avatar")
-                            .slider__arrow_right
-                        .slider__name Анисимова Ольга
-                        .slider__text Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами данной компании
+                    .slider__container
+                        .slider__track
+                            .slider__item 
+                                .slider__avatar
+                                    img(src="img/jpg/reviews/img_1.jpg", alt="avatar")
+                                .slider__name Анисимова Ольга
+                                .slider__text Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами данной компании
+                            .slider__item 
+                                .slider__avatar    
+                                    img(src="img/jpg/reviews/img_2.jpg", alt="avatar")   
+                                .slider__name Какая-то телка
+                                .slider__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum consequuntur adipisci beatae voluptas accusamus ipsum laboriosam voluptatem quod officia odit consequatur a fugiat, vel maxime voluptate distinctio totam quia!
+                            .slider__item 
+                                .slider__avatar    
+                                    img(src="img/jpg/reviews/img_3.jpg", alt="avatar")   
+                                .slider__name Дмитрий Иванов
+                                .slider__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eius earum error. Veritatis, voluptatem totam. Rem, et? Adipisci omnis eius commodi explicabo iusto quas incidunt perferendis veritatis quasi quod tempora dicta amet aut quibusdam officia, modi totam. Sint, perferendis facilis!
+                    .slider__button_prev
+                    .slider__button_next
         section.questions
             .container
                 .title
@@ -275,7 +287,8 @@ html(lang="ru")
                 .footer__wrapDown
                     .wrapper
                         .footer__link © 2010 Scratch.com.ua
-                        .footer__politics Политика конфидециальности
+                        .footer__politics
+                            a(href="#") Политика конфидециальности
                     .wrapper 
                         .text Создание сайта:
                         .logo 

@@ -1,18 +1,5 @@
-// let menu = $("#menu");
-// let hamburger = $('#hamburger');
-// let heightHeader = parseInt($('#home').css('height')) + parseInt($('#home').css('padding-top')) + parseInt($('#home').css('padding-bottom'));
-// console.log(heightHeader);
 
-// $(window).scroll(function () {
-//     var top = $(this).scrollTop();
-//     if (top >= heightHeader) {
-//         menu.addClass('header_nav_scroll');
-//         hamburger.addClass('hamburger_scroll');
-//     } else if (top <= heightHeader) {
-//         menu.removeClass('header_nav_scroll');
-//         hamburger.removeClass('hamburger_scroll');
-//     }
-// });
+// hamburger
 
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.promo__menu'),
@@ -32,3 +19,25 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+
+//= hamburger
+
+// slider 
+
+let track = document.querySelector('.slider__track');
+let prev = document.querySelector('.slider__button_prev');
+let next = document.querySelector('.slider__button_next');
+console.log(track.style.left);
+
+prev.addEventListener('click', function () {
+    track.style.left = '0%';
+    console.log(track.style.left);
+});
+
+next.addEventListener('click', function () {
+    track.style.left = '-209%';
+    console.log(track.style.left);
+
+});
+
+//=
