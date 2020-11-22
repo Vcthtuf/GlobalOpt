@@ -9,22 +9,22 @@
         margin-bottom: 26px
         padding: 0 15px
 
-    .blockLeft 
-        display: flex
-        justify-content: flex-start
-        align-items: center
+        .wrapper:first-child
+            display: flex
+            justify-content: flex-start
+            align-items: center
+
+        .wrapper:last-child
+            display: flex
+            justify-content: flex-end
+            align-items: center
 
     &__icon 
         margin-right: 41px
 
         img
             max-width: 68px 
-            hight: auto
-
-    .blockRight 
-        display: flex
-        justify-content: flex-end
-        align-items: center
+            hight: auto  
             
     &__text
         font-size: 16px
@@ -41,7 +41,7 @@
         font-weight: bold
         text-align: right
 
-    &__divide  
+    &__divider
         background-color: #677177
         width: 100%
         height: 1px
@@ -52,12 +52,26 @@
         justify-content: space-between
         padding: 0 15px
 
-        .wrapper 
+        .wrapper:first-child
             display: flex
             justify-content: space-between
             align-items: center
             width: 50%
             padding: 0 15px
+
+        .wrapper:last-child
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            font-size: 13px
+            color: rgba(255, 255, 255, 0.6)
+            text-align: right
+
+            .text
+                display: inline-block
+                align-items: center
+                margin-right: 15px
+
 
     &__link 
         font-size: 13px
@@ -68,19 +82,6 @@
         font-size: 13px
         color: rgb(236, 100, 75)
         text-decoration: underline
-
-    &__create 
-        display: flex
-        justify-content: flex-end
-        align-items: center
-        font-size: 13px
-        color: rgba(255, 255, 255, 0.6)
-        text-align: right
-
-        .text
-            display: inline-block
-            align-items: center
-            margin-right: 15px
 
         .logo 
             display: inline-block
@@ -120,18 +121,18 @@
             font-size: 11px
 
         &__wrapDown 
-            .wrapper 
+            .wrapper:first-child
                 width: 60%
+
+            .wrapper:last-child
+                .text 
+                    font-size: 12px
 
         &__link 
             font-size: 11px
 
         &__politic 
             font-size: 11px
-
-        &__create 
-            .text 
-                font-size: 12px
 
     @media screen and (max-width: 768px) 
 
@@ -143,28 +144,28 @@
             flex-direction: column 
             align-items: center
 
-            .wrapper 
+            .wrapper:first-child
                 width: 80%
                 margin-bottom: 15px
 
     @media screen and (max-width: 576px)
 
         &__wrapDown 
-            .wrapper 
+            .wrapper:first-child 
                 width: 100%
 
     @media screen and (max-width: 480px)
 
         &__wrapUp
 
-            .blockRight 
+            .wrapper:last-child 
                 flex-direction: column
 
         &__tel 
             margin-bottom: 10px
 
         &__wrapDown 
-            .wrapper 
+            .wrapper:first-child
                 flex-direction: column
 
         &__link 
