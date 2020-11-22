@@ -27,16 +27,21 @@ window.addEventListener('DOMContentLoaded', () => {
 let track = document.querySelector('.slider__track');
 let prev = document.querySelector('.slider__button_prev');
 let next = document.querySelector('.slider__button_next');
-console.log(track.style.left);
+let trackShift = 0;
+let itemWidth = 600;
+
 
 prev.addEventListener('click', function () {
-    track.style.left = '0%';
-    console.log(track.style.left);
+    track.style.cssText = 'transform: translateX(' + (trackShift + itemWidth) + 'px);';
+    trackShift += itemWidth;
+    console.log(trackShift + itemWidth);
+
 });
 
 next.addEventListener('click', function () {
-    track.style.left = '-209%';
-    console.log(track.style.left);
+    track.style.cssText = 'transform: translateX(' + (trackShift - itemWidth) + 'px);';
+    trackShift -= itemWidth;
+    console.log(trackShift - itemWidth);
 
 });
 
