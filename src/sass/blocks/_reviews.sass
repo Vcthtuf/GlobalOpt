@@ -105,6 +105,13 @@
                 transform-origin: 50% 0%
                 transform: rotate(30deg) translateY(-1px)
 
+        .button_passive
+            pointer-events: none
+            &::before
+               background-color: #eee
+            &::after
+                background-color: #eee
+
         &__name 
             text-align: center
             font-size: 18px
