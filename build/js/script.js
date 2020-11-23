@@ -32,20 +32,40 @@ window.addEventListener('DOMContentLoaded', () => {
     let itemWidth = 600;
 
     prev.addEventListener('click', function () {
-        checkScreen();
+        screenWidth = document.documentElement.clientWidth;
+        if (screenWidth <= 600 && screenWidth > 500) {
+            itemWidth = 500;
+        } else if (screenWidth <= 500 && screenWidth > 400) {
+            itemWidth = 400;
+        } else if (screenWidth <= 400 && screenWidth > 300) {
+            itemWidth = 280;
+        }
         track.style.cssText = 'transform: translateX(' + (trackShift + itemWidth) + 'px);';
         trackShift += itemWidth;
+        console.log(screenWidth);
+        console.log(itemWidth);
 
-        checkButton();
+        checkButton(itemWidth);
 
     });
 
     next.addEventListener('click', function () {
-        checkScreen();
+        screenWidth = document.documentElement.clientWidth;
+        if (screenWidth <= 600 && screenWidth > 500) {
+            itemWidth = 500;
+        } else if (screenWidth <= 500 && screenWidth > 400) {
+            itemWidth = 400;
+        } else if (screenWidth <= 400 && screenWidth > 300) {
+            itemWidth = 280;
+        }
         track.style.cssText = 'transform: translateX(' + (trackShift - itemWidth) + 'px);';
         trackShift -= itemWidth;
 
-        checkButton();
+        console.log(screenWidth);
+        console.log(itemWidth);
+
+
+        checkButton(itemWidth);
 
     });
 
@@ -66,6 +86,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function checkScreen() {
+
+        screenWidth = document.documentElement.clientWidth;
         if (screenWidth <= 600 && screenWidth > 500) {
             itemWidth = 500;
         } else if (screenWidth <= 500 && screenWidth > 400) {
@@ -75,6 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         console.log(screenWidth);
         console.log(itemWidth);
+        return itemWidth;
     }
 
     //= slider
