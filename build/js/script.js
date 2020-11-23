@@ -28,10 +28,11 @@ window.addEventListener('DOMContentLoaded', () => {
     let prev = document.querySelector('.slider__button_prev');
     let next = document.querySelector('.slider__button_next');
     let trackShift = 0;
+    let screenWidth = document.documentElement.clientWidth;
     let itemWidth = 600;
 
-
     prev.addEventListener('click', function () {
+        checkScreen();
         track.style.cssText = 'transform: translateX(' + (trackShift + itemWidth) + 'px);';
         trackShift += itemWidth;
 
@@ -40,6 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     next.addEventListener('click', function () {
+        checkScreen();
         track.style.cssText = 'transform: translateX(' + (trackShift - itemWidth) + 'px);';
         trackShift -= itemWidth;
 
@@ -48,18 +50,31 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     function checkButton() {
-        if (trackShift >= 600) {
+        if (trackShift >= itemWidth) {
             prev.classList.add("button_passive");
         } else {
             prev.classList.remove("button_passive");
         }
 
-        if (trackShift <= -600) {
+        if (trackShift <= -itemWidth) {
             next.classList.add("button_passive");
         } else {
             next.classList.remove("button_passive");
         }
 
+
+    }
+
+    function checkScreen() {
+        if (screenWidth <= 600 && screenWidth > 500) {
+            itemWidth = 500;
+        } else if (screenWidth <= 500 && screenWidth > 400) {
+            itemWidth = 400;
+        } else if (screenWidth <= 400 && screenWidth > 300) {
+            itemWidth = 300;
+        }
+        console.log(screenWidth);
+        console.log(itemWidth);
     }
 
     //= slider

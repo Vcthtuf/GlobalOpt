@@ -120,6 +120,8 @@
             margin-bottom: 13px
 
         &__text 
+            width: 80%
+            margin: 0 auto
             font-size: 14px
             color: rgb(58, 58, 58)
             font-weight: 300
@@ -133,15 +135,24 @@
 
         .slider__text 
             font-size: 12px
+
+        .slider__button_prev
+            left: 24%
+
+        .slider__button_next
+            left: 65%
          
-    @media screen and ( max-width: 576px )
+    @media screen and ( max-width: 600px )
 
         padding: 30px 0
 
-        .slider__item 
-            width: 85%
+        .slider__container 
+            width: 500px
 
-    @media screen and ( max-width: 480px )
+        .slider__item 
+            min-width: 500px
+
+    @media screen and ( max-width: 500px )
 
         &__descr 
             font-size: 12px
@@ -151,6 +162,26 @@
 
         .slider__text 
             font-size: 10px
+
+        .slider__container 
+            width: 400px
+
+        .slider__item 
+            min-width: 400px
+
+        .slider__button_prev
+            left: 0%
+
+        .slider__button_next 
+            left: 88%
+
+    @media screen and ( max-width: 320px )
+
+        .slider__container 
+            width: 300px
+
+        .slider__item 
+            min-width: 300px
   
 
   
