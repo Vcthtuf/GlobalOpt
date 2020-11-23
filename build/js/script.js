@@ -93,7 +93,7 @@ window.addEventListener('DOMContentLoaded', () => {
         } else if (screenWidth <= 500 && screenWidth > 400) {
             itemWidth = 400;
         } else if (screenWidth <= 400 && screenWidth > 300) {
-            itemWidth = 300;
+            itemWidth = 280;
         }
         console.log(screenWidth);
         console.log(itemWidth);
